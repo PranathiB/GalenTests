@@ -1,0 +1,4 @@
+LeadForm on Affordability Calculator
+    http://www.integration.propertyguru.com.sg/mortgage/affordability-calculator
+        inject ../js/open-lead-form.js
+        check ../specs/lead-form.spec
