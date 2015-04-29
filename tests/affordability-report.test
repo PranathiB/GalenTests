@@ -1,0 +1,3 @@
+Affordability Report
+    http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator#report
+        check  ../specs/affordability-report-page.spec --include "desktop"
