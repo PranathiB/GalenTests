@@ -1,4 +1,9 @@
-LeadForm on Affordability Calculator
-    http://www.integration.propertyguru.com.sg/mortgage/affordability-calculator
+LeadForm on Desktop
+    http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080 ../html-reports
         inject ../js/open-lead-form.js
         check ../specs/lead-form.spec --include "desktop"
+
+LeadForm on Mobile
+    http://m.rr.propertyguru.com.sg/mortgage/affordability-calculator 320x568 ../html-reports
+        inject ../js/open-lead-form.js
+        check ../specs/lead-form.spec --include "mobile"

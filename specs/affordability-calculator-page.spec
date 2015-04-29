@@ -1,17 +1,19 @@
-
-
-
-=================================================
-Body				css		body
-RightSection			css		.right-section
+==============================================================================
+Body				        css		body
+RightSection			    css		.right-section
 AffordabilityContainer		css		#affordabilityContainer
-Catfish				css		.side-box
-Adbanner			css		.ad-leaderboard iframe		
-Breadcrumbs			css		.breadcrumb
-SharingWidget			css		.sharing
-ConfirmButton			id		inPrincipleApprovalButton
-CatfishLogo			css		.sponsor-logo
-=================================================
+Catfish				        css		.side-box
+Adbanner			        css		.ad-leaderboard iframe
+Breadcrumbs			        css		.breadcrumb
+SharingWidget			    css		.sharing
+ConfirmButton			    id		inPrincipleApprovalButton
+CatfishLogo			        css		.sponsor-logo
+MainApplicant			    name	main
+JointMarriedApplicant		name	jointMarried
+JointUnMarriedApplicant		name	jointUnMarried
+CatfishMobile               css     .catfish-mobile
+
+================================================================================
 
 
 @ desktop
@@ -39,3 +41,14 @@ ConfirmButton
 
 CatfishLogo
     centered horizontally inside: Catfish
+
+MainApplicant
+    aligned horizontally all: JointMarriedApplicant
+    aligned horizontally all: JointUnMarriedApplicant
+
+
+@ mobile
+---------------------
+# Right Section
+CatfishMobile
+    visible

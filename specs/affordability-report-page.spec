@@ -1,16 +1,17 @@
 ============================================
-Body			css	body
-Breadcrumbs		css	.breadcrumb
+Body			        css	body
+Breadcrumbs		        css	.breadcrumb
 AffordabilityContainer	id	affordability-form
-PropertyValueGraph	id	property-value-graph
-OutlayGraph		id	total-outlay-graph
-LTVGraph		id	ltv-graph
+PropertyValueGraph	    id	property-value-graph
+OutlayGraph		        id	total-outlay-graph
+LTVGraph		        id	ltv-graph
 CashDownpaymentGraph 	id	cash-downpayment-graph
-TDSRGraph		id	tdsr-report-graph
-MSRGraph		id	msr-report-graph
-CatfishLogo		css	.sponsor-logo
-Sidebar			css	.right-section .box
-SharingWidget		css	.sharing
+TDSRGraph		        id	tdsr-report-graph
+MSRGraph		        id	msr-report-graph
+CatfishLogo		        css	.sponsor-logo
+Sidebar			        css	.right-section .box
+SharingWidget		    css	.sharing
+
 ============================================
 
 @desktop

@@ -1,1 +1,0 @@
-$('#inPrincipleApprovalForm').modal('toggle');
