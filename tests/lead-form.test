@@ -1,9 +1,17 @@
 LeadForm on Desktop
     http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080 ../html-reports
         inject ../js/open-lead-form.js
-        check ../specs/lead-form.spec --include "desktop"
+        check ../specs/lead-form.spec --include "desktop, all"
+
+    http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
+            inject ../js/open-lead-form.js
+            check ../specs/lead-form.spec --include "desktop, all"
 
 LeadForm on Mobile
     http://m.rr.propertyguru.com.sg/mortgage/affordability-calculator 320x568 ../html-reports
         inject ../js/open-lead-form.js
-        check ../specs/lead-form.spec --include "mobile"
+        check ../specs/lead-form.spec --include "mobile, all"
+
+    http://m.rr.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
+        inject ../js/open-lead-form.js
+        check ../specs/lead-form.spec --include "mobile, all"
