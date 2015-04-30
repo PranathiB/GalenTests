@@ -1,0 +1,3 @@
+Mortgage Marketplace on Desktop
+    http://www.integration.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
+        check  ../specs/mortgage-marketplace-page.spec --include "desktop"

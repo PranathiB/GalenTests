@@ -42,9 +42,9 @@ ConfirmButton
 CatfishLogo
     centered horizontally inside: Catfish
 
-MainApplicant
-    aligned horizontally all: JointMarriedApplicant
-    aligned horizontally all: JointUnMarriedApplicant
+#MainApplicant
+ #   aligned horizontally all: JointMarriedApplicant
+  #  aligned horizontally all: JointUnMarriedApplicant
 
 
 @ mobile
@@ -52,3 +52,6 @@ MainApplicant
 # Right Section
 CatfishMobile
     visible
+
+AffordabilityContainer
+    centered horizontally inside: Body

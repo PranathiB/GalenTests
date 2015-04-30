@@ -2,6 +2,10 @@ Affordability Calculator on Desktop
     http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator  1920x1080
         check  ../specs/affordability-calculator-page.spec --include "desktop, all"
 
+Affordability Calculator on Tablet
+    http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator  1024x768
+        check  ../specs/affordability-calculator-page.spec --include "desktop, all"
+
 Affordability Calculator on Mobile
     http://m.rr.propertyguru.com.sg/mortgage/affordability-calculator  320x568
         check  ../specs/affordability-calculator-page.spec --include "mobile, all"
