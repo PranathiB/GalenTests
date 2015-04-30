@@ -1,0 +1,1 @@
+$('#show-search-button').click();

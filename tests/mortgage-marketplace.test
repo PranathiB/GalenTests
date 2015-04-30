@@ -1,3 +1,13 @@
 Mortgage Marketplace on Desktop
-    http://www.integration.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
-        check  ../specs/mortgage-marketplace-page.spec --include "desktop"
+    http://www.rr.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
+        check  specs/mortgage-marketplace-page.spec --include "desktop"
+
+
+Mortgage Marketplace on Mobile
+    http://m.rr.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
+        check  specs/mortgage-marketplace-page.spec --include "mobile"
+
+Mortgage Marketplace Search on Mobile
+    http://m.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
+        inject js/mortgage-marketplace-advanced-search-mobile.js
+        check  specs/mortgage-marketplace-page.spec --include "mobile-search"

@@ -1,7 +1,7 @@
 Affordability Report on Desktop
-    http://www.integration.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
-        check  ../specs/affordability-report-page.spec --include "desktop"
+    http://www.rr.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
+        check  specs/affordability-report-page.spec --include "desktop"
 
 Affordability Report on Mobile
     http://m.rr.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
-        check  ../specs/affordability-report-page.spec --include "mobile"
+        check  specs/affordability-report-page.spec --include "mobile"
