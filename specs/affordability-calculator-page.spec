@@ -8,9 +8,9 @@ Breadcrumbs			        css		.breadcrumb
 SharingWidget			    css		.sharing
 ConfirmButton			    id		inPrincipleApprovalButton
 CatfishLogo			        css		.sponsor-logo
-MainApplicant			    name	main
-JointMarriedApplicant		name	jointMarried
-JointUnMarriedApplicant		name	jointUnMarried
+MainApplicant			    css	    [name=main]
+JointMarriedApplicant		css 	[name=jointMarried]
+JointUnMarriedApplicant		css 	[name=jointUnMarried]
 CatfishMobile               css     .catfish-mobile
 
 ================================================================================
@@ -42,9 +42,9 @@ ConfirmButton
 CatfishLogo
     centered horizontally inside: Catfish
 
-#MainApplicant
- #   aligned horizontally all: JointMarriedApplicant
-  #  aligned horizontally all: JointUnMarriedApplicant
+MainApplicant
+   aligned horizontally all: JointMarriedApplicant
+   aligned horizontally all: JointUnMarriedApplicant
 
 
 @ mobile

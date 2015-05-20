@@ -5,6 +5,7 @@ BuyingGuides	css		.property-guide-box
 SortBy			css		#sortby
 PackagesBox		css		#mortgage-results-box
 SearchButton	css 	#show-search-button
+AdvancedSearch  css     .search-more-option
 ===================================================================
 
 @all
@@ -22,11 +23,14 @@ MMForm
     contains: SearchBox, BuyingGuides, SortBy, PackagesBox
 
 BuyingGuides
-    inside: MMForm 1px right
+    inside: MMForm 0px right
 
 PackagesBox
    below: SearchBox
    below: SortBy
+
+AdvancedSearch
+   absent
 
 
 @ mobile
@@ -47,5 +51,7 @@ BuyingGuides
 
 @ mobile-search
 ------------------
+AdvancedSearch
+  visible
 SearchBox
     image: file ../images/advanced-search.png
