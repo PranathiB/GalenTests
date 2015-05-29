@@ -9,7 +9,7 @@ Singapore Mortgage Marketplace on Mobile
 
 Singapore Mortgage Marketplace Search on Mobile
     http://m.staging.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
-        inject js/mortgage-marketplace-advanced-search-mobile.js
+        inject src/js/mortgage-marketplace-advanced-search-mobile.js
         check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"
 
 
@@ -27,5 +27,5 @@ Malaysia Mortgage Marketplace on Mobile
 
 Malaysia Mortgage Marketplace Search on Mobile
     http://m.staging.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
-        inject js/mortgage-marketplace-advanced-search-mobile.js
+        inject src/js/mortgage-marketplace-advanced-search-mobile.js
         check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"
