@@ -1,31 +1,31 @@
 Singapore Mortgage Marketplace on Desktop
-    http://www.mteam.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
-        check  specs/mortgage-marketplace-page.spec --include "desktop"
+    http://www.staging.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
+        check  src/specs/mortgage-marketplace-page.spec --include "desktop"
 
 
 Singapore Mortgage Marketplace on Mobile
-    http://m.mteam.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
-        check  specs/mortgage-marketplace-page.spec --include "mobile"
+    http://m.staging.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
+        check  src/specs/mortgage-marketplace-page.spec --include "mobile"
 
 Singapore Mortgage Marketplace Search on Mobile
-    http://m.mteam.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
+    http://m.staging.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
         inject js/mortgage-marketplace-advanced-search-mobile.js
-        check  specs/mortgage-marketplace-page.spec --include "mobile-search"
+        check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"
 
 
 Malaysia Mortgage Marketplace on Desktop
-    http://www.propertyguru.com.my/mortgage/home-loan 1920x1080 ../html-reports
-	check specs/mortgage-marketplace-page.spec --include "desktop"
+    http://www.staging.propertyguru.com.my/mortgage/home-loan 1920x1080 ../html-reports
+	check src/specs/mortgage-marketplace-page.spec --include "desktop"
 
 Malaysia Mortgage Marketplace on Tablet
-    http://www.propertyguru.com.my/mortgage/home-loan 1024x768 ../html-reports
-        check specs/mortgage-marketplace-page.spec --include "tablet","all"
+    http://www.staging.propertyguru.com.my/mortgage/home-loan 1024x768 ../html-reports
+        check src/specs/mortgage-marketplace-page.spec --include "tablet","all"
 
 Malaysia Mortgage Marketplace on Mobile
-    http://m.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
-        check specs/mortgage-marketplace-page.spec --include "mobile","all"
+    http://m.staging.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
+        check src/specs/mortgage-marketplace-page.spec --include "mobile","all"
 
 Malaysia Mortgage Marketplace Search on Mobile
-    http://m.mteam.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
+    http://m.staging.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
         inject js/mortgage-marketplace-advanced-search-mobile.js
-        check  specs/mortgage-marketplace-page.spec --include "mobile-search"
+        check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"

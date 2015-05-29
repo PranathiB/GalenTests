@@ -1,0 +1,45 @@
+{
+  "tests" : [ {
+    "name" : "Singapore Affordability Calculator on Desktop",
+    "startedAt" : 1432894006795,
+    "endedAt" : 1432894023227,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 9,
+      "errors" : 2,
+      "warnings" : 0,
+      "total" : 11
+    },
+    "testId" : "1-singapore-affordability-calculator-on-desktop",
+    "failed" : true,
+    "duration" : 16432
+  }, {
+    "name" : "Singapore Affordability Calculator on Tablet",
+    "startedAt" : 1432894023228,
+    "endedAt" : 1432894038297,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 9,
+      "errors" : 2,
+      "warnings" : 0,
+      "total" : 11
+    },
+    "testId" : "2-singapore-affordability-calculator-on-tablet",
+    "failed" : true,
+    "duration" : 15069
+  }, {
+    "name" : "Singapore Affordability Calculator on Mobile",
+    "startedAt" : 1432894038297,
+    "endedAt" : 1432894065110,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 2,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 2
+    },
+    "testId" : "3-singapore-affordability-calculator-on-mobile",
+    "failed" : false,
+    "duration" : 26813
+  } ]
+}

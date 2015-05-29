@@ -1,17 +1,17 @@
 LeadForm on Desktop
-    http://www.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080 ../html-reports
+    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080 ../html-reports
         inject js/open-lead-form.js
-        check specs/lead-form.spec --include "desktop, all"
+        check src/specs/lead-form.spec --include "desktop, all"
 
-    http://www.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
+    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
             inject js/open-lead-form.js
-            check specs/lead-form.spec --include "desktop, all"
+            check src/specs/lead-form.spec --include "desktop, all"
 
 LeadForm on Mobile
-    http://m.propertyguru.com.sg/mortgage/affordability-calculator 320x568 ../html-reports
+    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator 320x568 ../html-reports
         inject js/open-lead-form.js
-        check specs/lead-form.spec --include "mobile, all"
+        check src/specs/lead-form.spec --include "mobile, all"
 
-    http://m.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
+    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
         inject js/open-lead-form.js
-        check specs/lead-form.spec --include "mobile, all"
+        check src/specs/lead-form.spec --include "mobile, all"

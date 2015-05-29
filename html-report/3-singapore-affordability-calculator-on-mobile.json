@@ -1,0 +1,63 @@
+{
+  "testId" : "3-singapore-affordability-calculator-on-mobile",
+  "name" : "Singapore Affordability Calculator on Mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator  320x568",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check  src/specs/affordability-calculator-page.spec --include \"mobile, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/affordability-calculator-page.spec included tags: mobile,all",
+          "status" : "info",
+          "time" : 1432894064992,
+          "includedTags" : [ "mobile", "all" ],
+          "sections" : [ {
+            "name" : "mobile",
+            "objects" : [ {
+              "name" : "CatfishMobile",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 54
+                },
+                "name" : "visible",
+                "highlight" : [ "CatfishMobile" ]
+              } ]
+            }, {
+              "name" : "AffordabilityContainer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 57
+                },
+                "name" : "centered horizontally inside: Body",
+                "highlight" : [ "AffordabilityContainer", "Body" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "Body" : {
+              "area" : [ 0, 0, 320, 3784 ]
+            },
+            "CatfishMobile" : {
+              "area" : [ 0, 403, 320, 60 ]
+            },
+            "AffordabilityContainer" : {
+              "area" : [ 15, 46, 290, 3556 ]
+            }
+          },
+          "screenshot" : "layout-3-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1432894063069,
+        "type" : "node"
+      } ],
+      "time" : 1432894038297,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,11 +1,11 @@
 Singapore Affordability Calculator on Desktop
-    http://www.propertyguru.com.sg/mortgage/affordability-calculator  1920x1080
-        check  specs/affordability-calculator-page.spec --include "desktop, all"
+    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1920x1080
+        check  src/specs/affordability-calculator-page.spec --include "desktop, all"
 
 Singapore Affordability Calculator on Tablet
-    http://www.propertyguru.com.sg/mortgage/affordability-calculator  1024x768
-        check  specs/affordability-calculator-page.spec --include "desktop, all"
+    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1024x768
+        check  src/specs/affordability-calculator-page.spec --include "desktop, all"
 
 Singapore Affordability Calculator on Mobile
-    http://m.propertyguru.com.sg/mortgage/affordability-calculator  320x568
-        check  specs/affordability-calculator-page.spec --include "mobile, all"
+    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator  320x568
+        check  src/specs/affordability-calculator-page.spec --include "mobile, all"

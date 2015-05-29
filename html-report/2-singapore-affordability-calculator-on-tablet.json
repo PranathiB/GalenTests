@@ -1,0 +1,173 @@
+{
+  "testId" : "2-singapore-affordability-calculator-on-tablet",
+  "name" : "Singapore Affordability Calculator on Tablet",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1024x768",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check  src/specs/affordability-calculator-page.spec --include \"desktop, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/affordability-calculator-page.spec included tags: desktop,all",
+          "status" : "error",
+          "time" : 1432894038175,
+          "includedTags" : [ "desktop", "all" ],
+          "sections" : [ {
+            "name" : "desktop",
+            "objects" : [ {
+              "name" : "Adbanner",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 22
+                },
+                "name" : "visible",
+                "errors" : [ "\"Adbanner\" is not visible on page" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "Breadcrumbs",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 25
+                },
+                "name" : "visible",
+                "highlight" : [ "Breadcrumbs" ]
+              } ]
+            }, {
+              "name" : "SharingWidget",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 28
+                },
+                "name" : "above: Catfish",
+                "errors" : [ "\"SharingWidget\" is absent on page" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "AffordabilityContainer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 31
+                },
+                "name" : "centered horizontally inside: Body",
+                "highlight" : [ "AffordabilityContainer", "Body" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 32
+                },
+                "name" : "contains: Catfish",
+                "highlight" : [ "AffordabilityContainer", "Catfish" ]
+              } ]
+            }, {
+              "name" : "Catfish",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 36
+                },
+                "name" : "visible",
+                "highlight" : [ "Catfish" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 37
+                },
+                "name" : "contains: ConfirmButton, CatfishLogo",
+                "highlight" : [ "Catfish", "ConfirmButton", "CatfishLogo" ]
+              } ]
+            }, {
+              "name" : "ConfirmButton",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 40
+                },
+                "name" : "centered horizontally inside: Catfish",
+                "highlight" : [ "ConfirmButton", "Catfish" ]
+              } ]
+            }, {
+              "name" : "CatfishLogo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 43
+                },
+                "name" : "centered horizontally inside: Catfish",
+                "highlight" : [ "CatfishLogo", "Catfish" ]
+              } ]
+            }, {
+              "name" : "MainApplicant",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 46
+                },
+                "name" : "aligned horizontally all: JointMarriedApplicant",
+                "highlight" : [ "MainApplicant", "JointMarriedApplicant" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-calculator-page.spec",
+                  "lineNumber" : 47
+                },
+                "name" : "aligned horizontally all: JointUnMarriedApplicant",
+                "highlight" : [ "MainApplicant", "JointUnMarriedApplicant" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "Body" : {
+              "area" : [ 0, 0, 1024, 3331 ]
+            },
+            "JointMarriedApplicant" : {
+              "area" : [ 226, 437, 150, 150 ]
+            },
+            "Breadcrumbs" : {
+              "area" : [ 32, 115, 960, 31 ]
+            },
+            "JointUnMarriedApplicant" : {
+              "area" : [ 399, 437, 150, 150 ]
+            },
+            "MainApplicant" : {
+              "area" : [ 52, 437, 150, 150 ]
+            },
+            "CatfishLogo" : {
+              "area" : [ 764, 554, 142, 30 ]
+            },
+            "Catfish" : {
+              "area" : [ 689, 239, 293, 365 ]
+            },
+            "AffordabilityContainer" : {
+              "area" : [ 42, 163, 940, 2624 ]
+            },
+            "ConfirmButton" : {
+              "area" : [ 734, 482, 203, 36 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1432894032980,
+        "type" : "node"
+      } ],
+      "time" : 1432894023228,
+      "type" : "node"
+    } ]
+  }
+}

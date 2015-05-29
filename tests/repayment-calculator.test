@@ -1,11 +1,11 @@
 Singapore Mortgage Repayment Calculator on Desktop
-    http://www.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1920x1080
-        check  specs/repayment-calculator.spec --include "desktop, all"
+    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1920x1080
+        check  src/specs/repayment-calculator.spec --include "desktop, all"
 
 Singapore Mortgage Repayment Calculator on Tablet
-    http://www.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1024x768
-        check  specs/repayment-calculator.spec --include "tablet"
+    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1024x768
+        check  src/specs/repayment-calculator.spec --include "tablet"
 
 Singapore Mortgage Repayment Calculator on Mobile
-    http://www.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  320x568
-        check  specs/repayment-calculator.spec --include "mobile"
+    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  320x568
+        check  src/specs/repayment-calculator.spec --include "mobile"
