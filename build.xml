@@ -36,8 +36,8 @@
         <delete dir="${dist}"/>
     </target>
 
-    <target name="galenTest"
-            description="Run Galen test" >
+    <target> name="galenTest"
+         description="Run Galen test" >
         <!-- Delete the ${build} and ${dist} directory trees -->
         <exec executable="/bin/bash">
             <arg value="galen.sh"></arg>

@@ -1,0 +1,30 @@
+{
+  "testId" : "1-leadform-on-mobile",
+  "name" : "LeadForm on mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "            inject src/js/open-lead-form.js",
+        "status" : "info",
+        "time" : 1433502712828,
+        "type" : "node"
+      }, {
+        "name" : "            check src/specs/lead-form.spec  --include \"mobile, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "FileSyntaxException: Such constraint does not exist: centered\n    in src/specs/lead-form.spec:23",
+          "status" : "error",
+          "time" : 1433502713708,
+          "stacktrace" : "net.mindengine.galen.parser.FileSyntaxException: Such constraint does not exist: centered\n    in src/specs/lead-form.spec:23\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:118)\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:92)\n\tat net.mindengine.galen.api.Galen.checkLayout(Galen.java:62)\n\tat net.mindengine.galen.api.Galen.checkLayout(Galen.java:51)\n\tat net.mindengine.galen.suite.actions.GalenPageActionCheck.execute(GalenPageActionCheck.java:46)\n\tat net.mindengine.galen.runner.GalenPageRunner.executeAction(GalenPageRunner.java:77)\n\tat net.mindengine.galen.runner.GalenPageRunner.run(GalenPageRunner.java:69)\n\tat net.mindengine.galen.runner.GalenBasicTestRunner.runTest(GalenBasicTestRunner.java:71)\n\tat net.mindengine.galen.tests.GalenBasicTest.execute(GalenBasicTest.java:53)\n\tat net.mindengine.galen.TestRunnable.runTest(TestRunnable.java:68)\n\tat net.mindengine.galen.TestRunnable.run(TestRunnable.java:94)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)\n\tat java.lang.Thread.run(Thread.java:744)\nCaused by: net.mindengine.galen.parser.SyntaxException: Such constraint does not exist: centered\n\tat net.mindengine.galen.specs.reader.SpecReader.findMatchingSpec(SpecReader.java:538)\n\tat net.mindengine.galen.specs.reader.SpecReader.readSpecWithParams(SpecReader.java:527)\n\tat net.mindengine.galen.specs.reader.SpecReader.read(SpecReader.java:517)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.readSpec(StateDoingSection.java:87)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.processSpecForSimpleObject(StateDoingSection.java:167)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.process(StateDoingSection.java:117)\n\tat net.mindengine.galen.specs.reader.page.PageSpecLineProcessor.processLine(PageSpecLineProcessor.java:81)\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:112)\n\t... 13 more\n",
+          "type" : "node"
+        } ],
+        "time" : 1433502713656,
+        "type" : "node"
+      } ],
+      "time" : 1433502701471,
+      "type" : "node"
+    } ]
+  }
+}

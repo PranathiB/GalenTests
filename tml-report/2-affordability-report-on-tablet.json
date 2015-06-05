@@ -1,0 +1,28 @@
+{
+  "testId" : "2-affordability-report-on-tablet",
+  "name" : "Affordability Report on tablet",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1024x568",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "            check src/specs/affordability-report-page.spec  --include \"tablet, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/affordability-report-page.spec included tags: tablet,all",
+          "status" : "info",
+          "time" : 1433502643069,
+          "includedTags" : [ "tablet", "all" ],
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1433502640387,
+        "type" : "node"
+      } ],
+      "time" : 1433502631746,
+      "type" : "node"
+    } ]
+  }
+}

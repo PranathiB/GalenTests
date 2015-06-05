@@ -1,5 +1,5 @@
 ==================================================================================
-ModalContainer		css		#inPrincipleApprovalForm
+ModalContainer	css		#inPrincipleApprovalForm
 ModalDialog		css		#inPrincipleApprovalForm .modal-dialog
 BankLogo		css		.bank-logo
 LeadText		css		.lead-text-section

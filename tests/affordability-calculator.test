@@ -1,6 +1,6 @@
 @@ Set
-    env     staging
-    url     http://www.${env}.propertyguru.com.sg/mortgage/affordability-calculator
+    env     ${env}
+    url     http://www${env}.propertyguru.com.sg/mortgage/affordability-calculator
     spec    src/specs/affordability-calculator-page.spec
 
 @@ Parameterized
@@ -16,14 +16,4 @@
 
 Singapore Affordability Calculator on ${viewport}
     selenium ${browser} ${url} ${size}
-        check ${spec}  --include "${viewport}"
-
-@@ disabled
-Singapore Affordability Calculator on Tablet
-    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1024x768
-        check  ${spec} --include "desktop, all"
-
-@@ disabled
-Singapore Affordability Calculator on Mobile
-    http://m.$(environment.staging).propertyguru.com.sg/mortgage/affordability-calculator  320x568
-        check  ${spec} --include "mobile, all"
+        check ${spec}  --include "${viewport}, all"

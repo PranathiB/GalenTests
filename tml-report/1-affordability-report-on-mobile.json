@@ -1,0 +1,28 @@
+{
+  "testId" : "1-affordability-report-on-mobile",
+  "name" : "Affordability Report on mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "            check src/specs/affordability-report-page.spec  --include \"mobile, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/affordability-report-page.spec included tags: mobile,all",
+          "status" : "info",
+          "time" : 1433502631653,
+          "includedTags" : [ "mobile", "all" ],
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1433502628966,
+        "type" : "node"
+      } ],
+      "time" : 1433502618614,
+      "type" : "node"
+    } ]
+  }
+}

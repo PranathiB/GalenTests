@@ -1,17 +1,17 @@
 {
-  "testId" : "2-singapore-affordability-calculator-on-tablet",
-  "name" : "Singapore Affordability Calculator on Tablet",
+  "testId" : "3-singapore-affordability-calculator-on-desktop",
+  "name" : "Singapore Affordability Calculator on desktop",
   "report" : {
     "nodes" : [ {
-      "name" : "http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1024x768",
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080",
       "status" : "info",
       "nodes" : [ {
-        "name" : "        check  src/specs/affordability-calculator-page.spec --include \"desktop, all\"",
+        "name" : "        check src/specs/affordability-calculator-page.spec  --include \"desktop, all\"",
         "status" : "info",
         "nodes" : [ {
           "name" : "Check layout: src/specs/affordability-calculator-page.spec included tags: desktop,all",
           "status" : "error",
-          "time" : 1432894038175,
+          "time" : 1433502426970,
           "includedTags" : [ "desktop", "all" ],
           "sections" : [ {
             "name" : "desktop",
@@ -133,40 +133,40 @@
           } ],
           "objects" : {
             "Body" : {
-              "area" : [ 0, 0, 1024, 3331 ]
+              "area" : [ 0, 0, 1440, 3311 ]
             },
             "JointMarriedApplicant" : {
-              "area" : [ 226, 437, 150, 150 ]
+              "area" : [ 434, 437, 150, 150 ]
             },
             "Breadcrumbs" : {
-              "area" : [ 32, 115, 960, 31 ]
+              "area" : [ 240, 115, 960, 31 ]
             },
             "JointUnMarriedApplicant" : {
-              "area" : [ 399, 437, 150, 150 ]
+              "area" : [ 607, 437, 150, 150 ]
             },
             "MainApplicant" : {
-              "area" : [ 52, 437, 150, 150 ]
+              "area" : [ 260, 437, 150, 150 ]
             },
             "CatfishLogo" : {
-              "area" : [ 764, 554, 142, 30 ]
+              "area" : [ 972, 554, 142, 30 ]
             },
             "Catfish" : {
-              "area" : [ 689, 239, 293, 365 ]
+              "area" : [ 897, 239, 293, 365 ]
             },
             "AffordabilityContainer" : {
-              "area" : [ 42, 163, 940, 2624 ]
+              "area" : [ 235, 163, 970, 2624 ]
             },
             "ConfirmButton" : {
-              "area" : [ 734, 482, 203, 36 ]
+              "area" : [ 942, 482, 203, 36 ]
             }
           },
-          "screenshot" : "layout-2-screenshot.png",
+          "screenshot" : "layout-3-screenshot.png",
           "type" : "layout"
         } ],
-        "time" : 1432894032980,
+        "time" : 1433502422654,
         "type" : "node"
       } ],
-      "time" : 1432894023228,
+      "time" : 1433502413544,
       "type" : "node"
     } ]
   }

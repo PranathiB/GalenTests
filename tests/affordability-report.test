@@ -1,11 +1,19 @@
-@@ set
-    desktop_domain www.staging.propertyguru.com.sg
-    mobile_domain m.staging.propertyguru.com.sg
+@@ Set
+    env     ${env}
+    url     http://www${env}.propertyguru.com.sg/mortgage/affordability-calculator#report
+    spec    src/specs/affordability-report-page.spec
 
-Affordability Report on Desktop
-    http://${}/mortgage/affordability-calculator#report 1920x1080 ../html-reports
-        check  src/specs/affordability-report-page.spec --include "desktop"
+@@ Parameterized
+    | browser   | full_name       |
+    | firefox   | Mozilla Firefox |
 
-Affordability Report on Mobile
-    http://mobile_domain/mortgage/affordability-calculator#report 320x568 ../html-reports
-        check  src/specs/affordability-report-page.spec --include "mobile"
+@@ Parameterized
+    | viewport  | size     |
+    | mobile    | 320x568  |
+    | tablet    | 1024x568 |
+    | desktop   | 1920x1080|
+
+
+Affordability Report on ${viewport}
+        selenium ${browser} ${url} ${size}
+            check ${spec}  --include "${viewport}, all"

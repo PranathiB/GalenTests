@@ -1,17 +1,21 @@
-LeadForm on Desktop
-    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator 1920x1080 ../html-reports
-        inject src/js/open-lead-form.js
-        check src/specs/lead-form.spec --include "desktop, all"
+@@ Set
+    env     ${env}
+    url     http://www${env}.propertyguru.com.sg/mortgage/affordability-calculator#report
+    spec    src/specs/lead-form.spec
+    inject  src/js/open-lead-form.js
 
-    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
-            inject src/js/open-lead-form.js
-            check src/specs/lead-form.spec --include "desktop, all"
+@@ Parameterized
+    | browser   | full_name       |
+    | firefox   | Mozilla Firefox |
 
-LeadForm on Mobile
-    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator 320x568 ../html-reports
-        inject src/js/open-lead-form.js
-        check src/specs/lead-form.spec --include "mobile, all"
+@@ Parameterized
+    | viewport  | size     |
+    | mobile    | 320x568  |
+    | tablet    | 1024x568 |
+    | desktop   | 1920x1080|
 
-    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
-        inject src/js/open-lead-form.js
-        check src/specs/lead-form.spec --include "mobile, all"
+
+Singapore LeadForm on ${viewport}
+        selenium ${browser} ${url} ${size}
+            inject ${inject}
+            check ${spec}  --include "${viewport}, all"

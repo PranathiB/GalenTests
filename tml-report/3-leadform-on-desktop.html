@@ -7,174 +7,31 @@
         <script src="galen-report.js"></script>
         <script>
 var reportData = {
-  "testId" : "1-singapore-affordability-calculator-on-desktop",
-  "name" : "Singapore Affordability Calculator on Desktop",
+  "testId" : "3-leadform-on-desktop",
+  "name" : "LeadForm on desktop",
   "report" : {
     "nodes" : [ {
-      "name" : "http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator  1920x1080",
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080",
       "status" : "info",
       "nodes" : [ {
-        "name" : "        check  src/specs/affordability-calculator-page.spec --include \"desktop, all\"",
+        "name" : "            inject src/js/open-lead-form.js",
+        "status" : "info",
+        "time" : 1433502733230,
+        "type" : "node"
+      }, {
+        "name" : "            check src/specs/lead-form.spec  --include \"desktop, all\"",
         "status" : "info",
         "nodes" : [ {
-          "name" : "Check layout: src/specs/affordability-calculator-page.spec included tags: desktop,all",
+          "name" : "FileSyntaxException: Such constraint does not exist: centered\n    in src/specs/lead-form.spec:23",
           "status" : "error",
-          "time" : 1432894023101,
-          "includedTags" : [ "desktop", "all" ],
-          "sections" : [ {
-            "name" : "desktop",
-            "objects" : [ {
-              "name" : "Adbanner",
-              "specs" : [ {
-                "status" : "error",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 22
-                },
-                "name" : "visible",
-                "errors" : [ "\"Adbanner\" is not visible on page" ],
-                "highlight" : [ ]
-              } ]
-            }, {
-              "name" : "Breadcrumbs",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 25
-                },
-                "name" : "visible",
-                "highlight" : [ "Breadcrumbs" ]
-              } ]
-            }, {
-              "name" : "SharingWidget",
-              "specs" : [ {
-                "status" : "error",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 28
-                },
-                "name" : "above: Catfish",
-                "errors" : [ "\"SharingWidget\" is absent on page" ],
-                "highlight" : [ ]
-              } ]
-            }, {
-              "name" : "AffordabilityContainer",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 31
-                },
-                "name" : "centered horizontally inside: Body",
-                "highlight" : [ "AffordabilityContainer", "Body" ]
-              }, {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 32
-                },
-                "name" : "contains: Catfish",
-                "highlight" : [ "AffordabilityContainer", "Catfish" ]
-              } ]
-            }, {
-              "name" : "Catfish",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 36
-                },
-                "name" : "visible",
-                "highlight" : [ "Catfish" ]
-              }, {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 37
-                },
-                "name" : "contains: ConfirmButton, CatfishLogo",
-                "highlight" : [ "Catfish", "ConfirmButton", "CatfishLogo" ]
-              } ]
-            }, {
-              "name" : "ConfirmButton",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 40
-                },
-                "name" : "centered horizontally inside: Catfish",
-                "highlight" : [ "ConfirmButton", "Catfish" ]
-              } ]
-            }, {
-              "name" : "CatfishLogo",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 43
-                },
-                "name" : "centered horizontally inside: Catfish",
-                "highlight" : [ "CatfishLogo", "Catfish" ]
-              } ]
-            }, {
-              "name" : "MainApplicant",
-              "specs" : [ {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 46
-                },
-                "name" : "aligned horizontally all: JointMarriedApplicant",
-                "highlight" : [ "MainApplicant", "JointMarriedApplicant" ]
-              }, {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "src/specs/affordability-calculator-page.spec",
-                  "lineNumber" : 47
-                },
-                "name" : "aligned horizontally all: JointUnMarriedApplicant",
-                "highlight" : [ "MainApplicant", "JointUnMarriedApplicant" ]
-              } ]
-            } ]
-          } ],
-          "objects" : {
-            "Body" : {
-              "area" : [ 0, 0, 1440, 3331 ]
-            },
-            "JointMarriedApplicant" : {
-              "area" : [ 434, 437, 150, 150 ]
-            },
-            "Breadcrumbs" : {
-              "area" : [ 240, 115, 960, 31 ]
-            },
-            "JointUnMarriedApplicant" : {
-              "area" : [ 607, 437, 150, 150 ]
-            },
-            "MainApplicant" : {
-              "area" : [ 260, 437, 150, 150 ]
-            },
-            "CatfishLogo" : {
-              "area" : [ 972, 554, 142, 30 ]
-            },
-            "Catfish" : {
-              "area" : [ 897, 239, 293, 365 ]
-            },
-            "AffordabilityContainer" : {
-              "area" : [ 250, 163, 940, 2624 ]
-            },
-            "ConfirmButton" : {
-              "area" : [ 942, 482, 203, 36 ]
-            }
-          },
-          "screenshot" : "layout-1-screenshot.png",
-          "type" : "layout"
+          "time" : 1433502734323,
+          "stacktrace" : "net.mindengine.galen.parser.FileSyntaxException: Such constraint does not exist: centered\n    in src/specs/lead-form.spec:23\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:118)\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:92)\n\tat net.mindengine.galen.api.Galen.checkLayout(Galen.java:62)\n\tat net.mindengine.galen.api.Galen.checkLayout(Galen.java:51)\n\tat net.mindengine.galen.suite.actions.GalenPageActionCheck.execute(GalenPageActionCheck.java:46)\n\tat net.mindengine.galen.runner.GalenPageRunner.executeAction(GalenPageRunner.java:77)\n\tat net.mindengine.galen.runner.GalenPageRunner.run(GalenPageRunner.java:69)\n\tat net.mindengine.galen.runner.GalenBasicTestRunner.runTest(GalenBasicTestRunner.java:71)\n\tat net.mindengine.galen.tests.GalenBasicTest.execute(GalenBasicTest.java:53)\n\tat net.mindengine.galen.TestRunnable.runTest(TestRunnable.java:68)\n\tat net.mindengine.galen.TestRunnable.run(TestRunnable.java:94)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)\n\tat java.lang.Thread.run(Thread.java:744)\nCaused by: net.mindengine.galen.parser.SyntaxException: Such constraint does not exist: centered\n\tat net.mindengine.galen.specs.reader.SpecReader.findMatchingSpec(SpecReader.java:538)\n\tat net.mindengine.galen.specs.reader.SpecReader.readSpecWithParams(SpecReader.java:527)\n\tat net.mindengine.galen.specs.reader.SpecReader.read(SpecReader.java:517)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.readSpec(StateDoingSection.java:87)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.processSpecForSimpleObject(StateDoingSection.java:167)\n\tat net.mindengine.galen.specs.reader.page.StateDoingSection.process(StateDoingSection.java:117)\n\tat net.mindengine.galen.specs.reader.page.PageSpecLineProcessor.processLine(PageSpecLineProcessor.java:81)\n\tat net.mindengine.galen.specs.reader.page.PageSpecReader.read(PageSpecReader.java:112)\n\t... 13 more\n",
+          "type" : "node"
         } ],
-        "time" : 1432894018284,
+        "time" : 1433502734296,
         "type" : "node"
       } ],
-      "time" : 1432894006797,
+      "time" : 1433502723757,
       "type" : "node"
     } ]
   }
@@ -356,7 +213,7 @@ var reportData = {
                 <li><a class="menu-op-expand-errors" href="#">Expand Errors</a></li>
             </ul>
         </div>
-        <h2>Singapore Affordability Calculator on Desktop</h2>
+        <h2>LeadForm on desktop</h2>
         <div id="main"></div>
         <div id="screen-shadow"></div>
         <div id="popup" class="popup">

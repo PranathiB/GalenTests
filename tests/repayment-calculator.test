@@ -1,11 +1,23 @@
-Singapore Mortgage Repayment Calculator on Desktop
-    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1920x1080
-        check  src/specs/repayment-calculator.spec --include "desktop, all"
+@@ Set
+    env     ${env}
+    spec    src/specs/repayment-calculator.spec
 
-Singapore Mortgage Repayment Calculator on Tablet
-    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  1024x768
-        check  src/specs/repayment-calculator.spec --include "tablet"
+@@ Parameterized
+    | browser   | full_name       |
+    | firefox   | Mozilla Firefox |
 
-Singapore Mortgage Repayment Calculator on Mobile
-    http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment  320x568
-        check  src/specs/repayment-calculator.spec --include "mobile"
+@@ Parameterized
+    | viewport  | size     |
+    | mobile    | 320x568  |
+    | tablet    | 1024x568 |
+    | desktop   | 1920x1080|
+
+@@ Parameterized
+    | country   | url                                                                             |
+    | Singapore | http://www${env}.propertyguru.com.sg/mortgage/calculators/mortgage-repayment    |
+    | Malaysia  | http://www${env}.propertyguru.com.my/mortgage/calculators/mortgage-repayment    |
+
+
+${country} Mortgage Repayment Calculator on ${viewport}
+        selenium ${browser} ${url} ${size}
+                check ${spec}  --include "${viewport}, all"

@@ -1,0 +1,417 @@
+<html>
+    <head>
+        <title>Galen Reports</title>
+        <link rel="stylesheet" type="text/css" href="report.css"></link>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="handlebars-v2.0.0.js"></script>
+        <script src="galen-report.js"></script>
+        <script>
+var reportData = {
+  "testId" : "5-singapore-mortgage-repayment-calculator-on-desktop",
+  "name" : "Singapore Mortgage Repayment Calculator on desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium firefox http://www.staging.propertyguru.com.sg/mortgage/calculators/mortgage-repayment 1920x1080",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "                check src/specs/repayment-calculator.spec  --include \"desktop, all\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/repayment-calculator.spec included tags: desktop,all",
+          "status" : "error",
+          "time" : 1433503754210,
+          "includedTags" : [ "desktop", "all" ],
+          "sections" : [ {
+            "name" : "desktop",
+            "objects" : [ {
+              "name" : "Adbanner",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 22
+                },
+                "name" : "visible",
+                "errors" : [ "\"Adbanner\" is not visible on page" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 23
+                },
+                "name" : "above: RepaymentForm",
+                "errors" : [ "\"Adbanner\" is not visible on page" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "RepaymentForm",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 26
+                },
+                "name" : "contains: CalculatorText, CalculatorBox, Catfish, Summary",
+                "highlight" : [ "RepaymentForm", "CalculatorText", "CalculatorBox", "Catfish", "Summary" ]
+              } ]
+            }, {
+              "name" : "CalculatorText",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 32
+                },
+                "name" : "text is: Update the details below to calculate your home loan repayments.",
+                "highlight" : [ "CalculatorText" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 33
+                },
+                "name" : "above: CalculatorBox",
+                "highlight" : [ "CalculatorText", "CalculatorBox" ]
+              } ]
+            }, {
+              "name" : "CalculatorBox",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 37
+                },
+                "name" : "above: Summary",
+                "highlight" : [ "CalculatorBox", "Summary" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 38
+                },
+                "name" : "contains: MoneyRow-item-*, Slider-item-*, AmountBox",
+                "highlight" : [ "CalculatorBox", "MoneyRow-item-3", "MoneyRow-item-2", "MoneyRow-item-1", "Slider-item-2", "Slider-item-1", "AmountBox" ]
+              } ]
+            }, {
+              "name" : "MoneyRow-item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 42
+                },
+                "name" : "aligned vertically left: MoneyRow-item-2",
+                "highlight" : [ "MoneyRow-item-1", "MoneyRow-item-2" ]
+              } ]
+            }, {
+              "name" : "MoneyRow-item-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 42
+                },
+                "name" : "aligned vertically left: MoneyRow-item-3",
+                "highlight" : [ "MoneyRow-item-2", "MoneyRow-item-3" ]
+              } ]
+            }, {
+              "name" : "Slider-item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 45
+                },
+                "name" : "below: AmountBox",
+                "highlight" : [ "Slider-item-1", "AmountBox" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 46
+                },
+                "name" : "aligned vertically left: AmountBox 1px",
+                "highlight" : [ "Slider-item-1", "AmountBox" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 47
+                },
+                "name" : "aligned vertically all: Slider-item-2",
+                "highlight" : [ "Slider-item-1", "Slider-item-2" ]
+              } ]
+            }, {
+              "name" : "Catfish",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 51
+                },
+                "name" : "contains: AffordabilityButton",
+                "highlight" : [ "Catfish", "AffordabilityButton" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 52
+                },
+                "name" : "css padding-top is: 10px",
+                "highlight" : [ "Catfish" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/repayment-calculator.spec",
+                  "lineNumber" : 53
+                },
+                "name" : "right of: CalculatorBox",
+                "highlight" : [ "Catfish", "CalculatorBox" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "AffordabilityButton" : {
+              "area" : [ 851, 685, 279, 37 ]
+            },
+            "AmountBox" : {
+              "area" : [ 433, 281, 168, 34 ]
+            },
+            "RepaymentForm" : {
+              "area" : [ 235, 163, 955, 654 ]
+            },
+            "Slider-item-2" : {
+              "area" : [ 434, 393, 365, 16 ]
+            },
+            "Slider-item-1" : {
+              "area" : [ 434, 326, 365, 16 ]
+            },
+            "CalculatorText" : {
+              "area" : [ 235, 203, 565, 18 ]
+            },
+            "CalculatorBox" : {
+              "area" : [ 235, 241, 565, 229 ]
+            },
+            "MoneyRow-item-3" : {
+              "area" : [ 235, 392, 168, 18 ]
+            },
+            "Catfish" : {
+              "area" : [ 830, 203, 320, 533 ]
+            },
+            "MoneyRow-item-2" : {
+              "area" : [ 235, 325, 168, 18 ]
+            },
+            "MoneyRow-item-1" : {
+              "area" : [ 235, 281, 168, 18 ]
+            },
+            "Summary" : {
+              "area" : [ 235, 491, 565, 276 ]
+            }
+          },
+          "screenshot" : "layout-5-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1433503748566,
+        "type" : "node"
+      } ],
+      "time" : 1433503675822,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+        <script>
+
+            $(function () {
+                var galenReport = createGalenReport();
+                galenReport.render("main", reportData);
+            });
+        </script>
+    </head>
+    <body>
+        <script id="report-tpl" type="text/x-handlebars-template">
+            <ul class="report-nodes">
+            {{#each report.nodes}}
+                {{renderNode this}}
+            {{/each}}
+            </ul>
+        </script>
+        <script id="report-node-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-{{status}} contains-children-{{hasChildElements nodes}} collapsed" href="#">{{status}}</a>
+                <div class="node-name node-status-{{status}}">{{name}}</div>
+                {{#if stacktrace}}
+                    <div class="stacktrace">{{stacktrace}}</div>
+                {{/if}}
+                {{#if attachments}}
+                    <ul class="report-node-attachments">
+                        {{#each attachments}}
+                            <li>
+                                <a class="icon-sprite-before node-attachment" href="{{this}}">{{this}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                <div class="node-details expand-container">
+                    {{#if nodes}}
+                        <ul class="report-nodes">
+                            {{#each nodes}}
+                                {{renderNode this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        <script id="report-node-text-tpl" type="text/x-handlebars-template">
+            <li>
+                <div class="node-simple-text">
+                    {{name}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-label node-status-info contains-children-true collapsed" href="#">INFO</a>
+                <div class="node-name">{{name}}</div>
+                <div class="node-details expand-container">
+                    {{renderSublayout this}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-sublayout-tpl" type="text/x-handlebars-template">
+            <div class="layout-report" data-layout-id="{{layoutId}}" data-screenshot="{{screenshot}}">
+                <ul class="layout-sections">
+                    {{#each sections}}
+                        {{renderLayoutSection this}}
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+        <script id="report-layout-section-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-section icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <div class="layout-details expand-container">
+                    {{#if sections}}
+                        <ul class="layout-sections">
+                        {{#each sections}}
+                            {{renderLayoutSection this}}
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                    {{#if objects}}
+                        <ul class="layout-objects">
+                            {{#each objects}}
+                                {{renderLayoutObject this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        
+        <script id="report-layout-object-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-object icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <ul class="layout-checks expand-container">
+                    {{#each specs}}
+                        {{renderLayoutCheck this}}
+                    {{/each}}
+                    {{#each specGroups}}
+                    <li>
+                        <a class="layout-specgroup icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                        <ul class="layout-checks expand-container">
+                            {{#each specs}}
+                                {{renderLayoutCheck this}}
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+        </script>
+        <script id="report-layout-check-tpl" type="text/x-handlebars-template">
+            <li>
+            <a class="layout-check icon-sprite-before layout-check-status-{{status}}" href="#" 
+                data-highlight-objects="{{commaSeparated highlight}}"
+                title="{{place.filePath}}#{{place.lineNumber}}"
+                >{{name}}</a>
+
+                {{#if errors}}
+                    <div class="layout-check-error-message">
+                        {{#if imageComparison}}
+                        <a class="image-comparison-link" 
+                            data-actual-image="{{imageComparison.actualImage}}"
+                            data-expected-image="{{imageComparison.expectedImage}}"
+                            data-map-image="{{imageComparison.comparisonMapImage}}"
+                            href="#">Show image comparison</a>
+                        {{/if}}
+                        <div class="layout-check-error-message-text">
+                            <ul>
+                            {{#each errors}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{#if subLayout}}
+                    {{renderSublayout subLayout}}
+                {{/if}}
+            </li>
+        </script>
+        <script id="screenshot-popup-tpl" type="text/x-handlebars-template">
+            <div class="screenshot-canvas">
+                <img src="{{screenshot}}"/>
+                {{#each objects}}
+                <div class="canvas-rect" style="left: {{area.left}}px; top: {{area.top}}px; width: {{area.width}}px; height: {{area.height}}px; border-color: {{color}};">
+                    <div class="canvas-rect-wrapper">
+                        <div class="canvas-rect-hint" style="background: {{color}};">{{@key}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+        <script id="image-comparison-tpl" type="text/x-handlebars-template">
+            <div class="image-comparison">
+                <h5>Actual</h5>
+                <img src="{{actual}}"/>
+
+                <h5>Expected</h5>
+                <img src="{{expected}}"/>
+
+                <h5>Comparison map</h5>
+                <img src="{{map}}"/>
+            </div>
+        </script>
+
+
+        <div id="menu">
+            <ul>
+                <li><a class="menu-op-expand-all" href="#">Expand All</a></li>
+                <li><a class="menu-op-collapse-all" href="#">Collapse All</a></li>
+                <li><a class="menu-op-expand-errors" href="#">Expand Errors</a></li>
+            </ul>
+        </div>
+        <h2>Singapore Mortgage Repayment Calculator on desktop</h2>
+        <div id="main"></div>
+        <div id="screen-shadow"></div>
+        <div id="popup" class="popup">
+            <div class="popup-wrapper">
+                <a class="popup-close-link" href="#">close</a>
+                <div class="popup-content"></div>
+            </div>
+        </div>
+        <div id="notification" class="notification">
+            <div class="notification-wrapper">
+                <a class="notification-close-link" href="#">close</a>
+                <div class="notification-summary"></div>
+                <div class="notification-message"></div>
+            </div>
+        </div>
+    </body>
+</html>

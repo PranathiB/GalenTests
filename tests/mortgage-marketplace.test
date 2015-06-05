@@ -1,31 +1,23 @@
-Singapore Mortgage Marketplace on Desktop
-    http://www.staging.propertyguru.com.sg/mortgage/home-loan 1920x1080 ../html-reports
-        check  src/specs/mortgage-marketplace-page.spec --include "desktop"
+@@ Set
+    env         ${env}
+    spec        src/specs/mortgage-marketplace-page.spec
+
+@@ Parameterized
+    | browser   | full_name       |
+    | firefox   | Mozilla Firefox |
+
+@@ Parameterized
+    | viewport  | size     |
+    | mobile    | 320x568  |
+    | tablet    | 1024x568 |
+    | desktop   | 1920x1080|
+
+@@ Parameterized
+    | country   | url                                                        |
+    | Singapore | http://www${env}.propertyguru.com.sg/mortgage/home-loan    |
+    | Malaysia  | http://www${env}.propertyguru.com.my/mortgage/home-loan    |
 
 
-Singapore Mortgage Marketplace on Mobile
-    http://m.staging.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
-        check  src/specs/mortgage-marketplace-page.spec --include "mobile"
-
-Singapore Mortgage Marketplace Search on Mobile
-    http://m.staging.propertyguru.com.sg/mortgage/home-loan 320x568 ../html-reports
-        inject src/js/mortgage-marketplace-advanced-search-mobile.js
-        check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"
-
-
-Malaysia Mortgage Marketplace on Desktop
-    http://www.staging.propertyguru.com.my/mortgage/home-loan 1920x1080 ../html-reports
-	check src/specs/mortgage-marketplace-page.spec --include "desktop"
-
-Malaysia Mortgage Marketplace on Tablet
-    http://www.staging.propertyguru.com.my/mortgage/home-loan 1024x768 ../html-reports
-        check src/specs/mortgage-marketplace-page.spec --include "tablet","all"
-
-Malaysia Mortgage Marketplace on Mobile
-    http://m.staging.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
-        check src/specs/mortgage-marketplace-page.spec --include "mobile","all"
-
-Malaysia Mortgage Marketplace Search on Mobile
-    http://m.staging.propertyguru.com.my/mortgage/home-loan 320x568 ../html-reports
-        inject src/js/mortgage-marketplace-advanced-search-mobile.js
-        check  src/specs/mortgage-marketplace-page.spec --include "mobile-search"
+${country} Mortgage Marketplace on ${viewport}
+    selenium ${browser} ${url} ${size}
+        check ${spec}  --include "${viewport}, all"
