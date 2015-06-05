@@ -1,0 +1,22 @@
+@@ Set
+    env         ${env}
+    spec        src/specs/mortgage-marketplace-index-page.spec
+
+@@ Parameterized
+    | browser   | full_name       |
+    | firefox   | Mozilla Firefox |
+
+@@ Parameterized
+    | viewport  | size     |
+    | mobile    | 320x568  |
+    #| tablet    | 1024x568 |
+    | desktop   | 1920x1080|
+
+@@ Parameterized
+    | country   | url                                              |
+    | Singapore | http://www${env}.propertyguru.com.sg/mortgage    |
+
+
+${country} Mortgage Marketplace on ${viewport}
+    selenium ${browser} ${url} ${size}
+        check ${spec}  --include "${viewport}, all"

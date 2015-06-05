@@ -1,5 +1,6 @@
 ===============================================================
 Adbanner			        css			.ad-leaderboard iframe
+BannerSection               css         .section.banner
 MortgageIndex               id          #mortgage-index
 NewMortgageBox              css         .new-banner-box
 ReMortgageBox               css         .re-banner-box
@@ -11,8 +12,7 @@ BanksSection                css         .banks
 
 ===============================================================
 
-
-
+    
 @desktop
 ---------------------------------------
 NewMortgageBox
@@ -24,6 +24,18 @@ Adbanner
     below: NewMortgageBox
     below: ReMortgageBox
 
+
+@ mobile
+-----------------------------------
+NewMortgageBox
+    above: ReMortgageBox
+    
+
+@all
+--------------------------------------
+BannerSection
+    contains: NewMortgageBox, ReMortgageBox
+    
 PackageContainer
     below: Adbanner
     above: BanksSection
@@ -39,4 +51,3 @@ AffordabilitySection
 
 GuidesSection
     below: PackageContainer
-
