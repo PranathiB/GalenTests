@@ -1,7 +1,7 @@
 ============================================
 Body			        css	body
 Breadcrumbs		        css	.breadcrumb
-AffordabilityContainer	id	affordability-form
+AffordabilityContainer	id	affordabilityContainer
 PropertyValueGraph	    id	property-value-graph
 OutlayGraph		        id	total-outlay-graph
 LTVGraph		        id	ltv-graph

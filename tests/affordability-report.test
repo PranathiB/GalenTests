@@ -1,7 +1,11 @@
+@@ set
+    desktop_domain www.staging.propertyguru.com.sg
+    mobile_domain m.staging.propertyguru.com.sg
+
 Affordability Report on Desktop
-    http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports
+    http://${}/mortgage/affordability-calculator#report 1920x1080 ../html-reports
         check  src/specs/affordability-report-page.spec --include "desktop"
 
 Affordability Report on Mobile
-    http://m.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 320x568 ../html-reports
+    http://mobile_domain/mortgage/affordability-calculator#report 320x568 ../html-reports
         check  src/specs/affordability-report-page.spec --include "mobile"

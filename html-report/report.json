@@ -1,45 +1,31 @@
 {
   "tests" : [ {
-    "name" : "Singapore Affordability Calculator on Desktop",
-    "startedAt" : 1432894006795,
-    "endedAt" : 1432894023227,
+    "name" : "Affordability Report on Desktop",
+    "startedAt" : 1433334171772,
+    "endedAt" : 1433334193308,
     "failed" : true,
     "statistic" : {
-      "passed" : 9,
+      "passed" : 7,
       "errors" : 2,
       "warnings" : 0,
-      "total" : 11
+      "total" : 9
     },
-    "testId" : "1-singapore-affordability-calculator-on-desktop",
+    "testId" : "1-affordability-report-on-desktop",
     "failed" : true,
-    "duration" : 16432
+    "duration" : 21536
   }, {
-    "name" : "Singapore Affordability Calculator on Tablet",
-    "startedAt" : 1432894023228,
-    "endedAt" : 1432894038297,
-    "failed" : true,
-    "statistic" : {
-      "passed" : 9,
-      "errors" : 2,
-      "warnings" : 0,
-      "total" : 11
-    },
-    "testId" : "2-singapore-affordability-calculator-on-tablet",
-    "failed" : true,
-    "duration" : 15069
-  }, {
-    "name" : "Singapore Affordability Calculator on Mobile",
-    "startedAt" : 1432894038297,
-    "endedAt" : 1432894065110,
+    "name" : "Affordability Report on Mobile",
+    "startedAt" : 1433334193309,
+    "endedAt" : 1433334195886,
     "failed" : false,
     "statistic" : {
-      "passed" : 2,
+      "passed" : 0,
       "errors" : 0,
       "warnings" : 0,
-      "total" : 2
+      "total" : 0
     },
-    "testId" : "3-singapore-affordability-calculator-on-mobile",
+    "testId" : "2-affordability-report-on-mobile",
     "failed" : false,
-    "duration" : 26813
+    "duration" : 2577
   } ]
 }

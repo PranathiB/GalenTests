@@ -1,0 +1,154 @@
+{
+  "testId" : "1-affordability-report-on-desktop",
+  "name" : "Affordability Report on Desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://www.staging.propertyguru.com.sg/mortgage/affordability-calculator#report 1920x1080 ../html-reports",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "        check  src/specs/affordability-report-page.spec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: src/specs/affordability-report-page.spec included tags: desktop",
+          "status" : "error",
+          "time" : 1433334193091,
+          "includedTags" : [ "desktop" ],
+          "sections" : [ {
+            "name" : "desktop",
+            "objects" : [ {
+              "name" : "AffordabilityContainer",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 19
+                },
+                "name" : "contains: PropertyValueGraph, OutlayGraph, PropertyValueGraph, LTVGraph, CashDownpaymentGraph, TDSRGraph, MSRGraph, CatfishLogo, Sidebar, SharingWidget",
+                "errors" : [ "\"SharingWidget\" is absent on page" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 20
+                },
+                "name" : "centered horizontally inside: Body",
+                "highlight" : [ "AffordabilityContainer", "Body" ]
+              } ]
+            }, {
+              "name" : "PropertyValueGraph",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 23
+                },
+                "name" : "aligned horizontally all: OutlayGraph",
+                "highlight" : [ "PropertyValueGraph", "OutlayGraph" ]
+              } ]
+            }, {
+              "name" : "LTVGraph",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 26
+                },
+                "name" : "aligned vertically all: TDSRGraph",
+                "highlight" : [ "LTVGraph", "TDSRGraph" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 27
+                },
+                "name" : "aligned vertically all: CashDownpaymentGraph",
+                "highlight" : [ "LTVGraph", "CashDownpaymentGraph" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 28
+                },
+                "name" : "aligned vertically all: MSRGraph",
+                "highlight" : [ "LTVGraph", "MSRGraph" ]
+              } ]
+            }, {
+              "name" : "SharingWidget",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 31
+                },
+                "name" : "above: Sidebar",
+                "errors" : [ "\"SharingWidget\" is absent on page" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "CatfishLogo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 34
+                },
+                "name" : "visible",
+                "highlight" : [ "CatfishLogo" ]
+              } ]
+            }, {
+              "name" : "Breadcrumbs",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "src/specs/affordability-report-page.spec",
+                  "lineNumber" : 37
+                },
+                "name" : "visible",
+                "highlight" : [ "Breadcrumbs" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "MSRGraph" : {
+              "area" : [ 250, 4921, 617, 400 ]
+            },
+            "Body" : {
+              "area" : [ 0, 0, 1440, 6274 ]
+            },
+            "TDSRGraph" : {
+              "area" : [ 250, 4016, 617, 400 ]
+            },
+            "Breadcrumbs" : {
+              "area" : [ 240, 115, 960, 31 ]
+            },
+            "CashDownpaymentGraph" : {
+              "area" : [ 250, 3202, 617, 400 ]
+            },
+            "PropertyValueGraph" : {
+              "area" : [ 250, 1094, 260, 500 ]
+            },
+            "CatfishLogo" : {
+              "area" : [ 487, 5668, 142, 30 ]
+            },
+            "AffordabilityContainer" : {
+              "area" : [ 235, 265, 970, 5486 ]
+            },
+            "LTVGraph" : {
+              "area" : [ 250, 2334, 617, 400 ]
+            },
+            "OutlayGraph" : {
+              "area" : [ 573, 1094, 260, 500 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1433334186359,
+        "type" : "node"
+      } ],
+      "time" : 1433334171774,
+      "type" : "node"
+    } ]
+  }
+}
