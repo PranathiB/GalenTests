@@ -20,7 +20,7 @@ BankLogo
 @ mobile
 ----------------
 ModalDialog
-    centered: ModalContainer 20px
+    centered inside: ModalContainer 20px
 
 BankLogo
    below: LeadText

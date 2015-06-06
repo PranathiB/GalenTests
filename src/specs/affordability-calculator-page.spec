@@ -24,8 +24,8 @@ Adbanner
 Breadcrumbs
     visible
 
-SharingWidget
-    above: Catfish
+#SharingWidget
+#    above: Catfish
 
 AffordabilityContainer
     centered horizontally inside: Body

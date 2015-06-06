@@ -1,8 +1,7 @@
 @@ Set
     env         ${env}
     protocol    http://
-    domain      propertyguru.com.sg
-    resource    /mortgage/home-loan
+    resource    /mortgage/calculators/mortgage-repayment
     spec        src/specs/repayment-calculator.spec
 
 @@ Parameterized

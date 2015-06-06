@@ -12,7 +12,7 @@ CatfishLogo		        css	.sponsor-logo
 Sidebar			        css	.right-section .box
 SharingWidget		    css	.sharing
 
-============================================
+================================================
 
 @desktop
 AffordabilityContainer
@@ -27,8 +27,9 @@ LTVGraph
     aligned vertically all: CashDownpaymentGraph
     aligned vertically all: MSRGraph
 
-SharingWidget
-    above: Sidebar
+
+#SharingWidget
+#   above: Sidebar
 
 CatfishLogo
     visible
