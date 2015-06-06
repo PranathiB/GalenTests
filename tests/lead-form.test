@@ -1,21 +1,27 @@
 @@ Set
-    env     ${env}
-    url     http://www${env}.propertyguru.com.sg/mortgage/affordability-calculator#report
-    spec    src/specs/lead-form.spec
-    inject  src/js/open-lead-form.js
+    env         ${env}
+    protocol    http://
+    domain      propertyguru.com.sg
+    resource    /mortgage/affordability-calculator#report
+    spec        src/specs/lead-form.spec
+    inject      src/js/open-lead-form.js
 
 @@ Parameterized
     | browser   | full_name       |
     | firefox   | Mozilla Firefox |
 
 @@ Parameterized
-    | viewport  | size     |
-    | mobile    | 320x568  |
-    | tablet    | 1024x568 |
-    | desktop   | 1920x1080|
+    | viewport  | size     | server |
+    | mobile    | 320x568  | m.     |
+    | tablet    | 1024x568 | www.   |
+    | desktop   | 1920x1080| www.   |
+
+@@ Parameterized
+    | country   | url                                                  |
+    | Singapore | ${protocol}${server}${env}.propertyguru.com.sg${resource}      |
 
 
-Singapore LeadForm on ${viewport}
+${country} LeadForm on ${viewport}
         selenium ${browser} ${url} ${size}
             inject ${inject}
             check ${spec}  --include "${viewport}, all"

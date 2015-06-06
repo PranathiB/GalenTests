@@ -1,20 +1,24 @@
 @@ Set
     env         ${env}
+    protocol    http://
+    domain      propertyguru.com.sg
+    resource    /mortgage
     spec        src/specs/mortgage-marketplace-index-page.spec
+
 
 @@ Parameterized
     | browser   | full_name       |
     | firefox   | Mozilla Firefox |
 
 @@ Parameterized
-    | viewport  | size     |
-    | mobile    | 320x568  |
-    #| tablet    | 1024x568 |
-    | desktop   | 1920x1080|
+    | viewport  | size     | server |
+    | mobile    | 320x568  | m.     |
+    | tablet    | 1024x568 | www.   |
+    | desktop   | 1920x1080| www.   |
 
 @@ Parameterized
-    | country   | url                                              |
-    | Singapore | http://www${env}.propertyguru.com.sg/mortgage    |
+    | country   | url                                                  |
+    | Singapore | ${protocol}${server}${env}.${domain}${resource}      |
 
 
 ${country} Mortgage Marketplace on ${viewport}
