@@ -14,6 +14,6 @@ galen -v
 ```
 #####To run the test, use the following command
  ````
- galen test tests/* -Denv=.staging --htmlreport html-report
+ galen test tests/* --htmlreport html-report
 ````
 
